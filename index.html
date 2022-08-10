@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<center>
+		<input type="number" id="num" onchange="changeSizeBynum()" onkeyup="changeSizeBynum()"value="16" />
+		<button type="button" onclick="changeSizeByBtnm()" name="btn1">-A</button>
+		<button type="button" onclick="changeSizeByBtn()" name="btn2">A</button>
+		<button type="button" onclick="changeSizeByBtnp()" name="btn3">A+</button>
+		<input type="range" min="1" max="100" id="slider" onchange="changeSizeBySlider()" value="16" />
+	</center>
+	<br /><br />
+	<p id="container" style="font-size: 16px;">
+		A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.
+	</p>
+	<script>
+		var cont = document.getElementById("container");
+		let a = 16; // default font size 16.
+
+		// function for increase font size.
+		function changeSizeByBtnp() {
+			a = a + 2;
+			container.style.fontSize = a+'px';
+			document.getElementById("slider").value = a;
+			document.getElementById("num").value = a;
+		}
+
+		// function for decrease font size.
+		function changeSizeByBtnm() {
+			if(a>1){
+				a = a - 2;
+				container.style.fontSize = a+'px';
+				document.getElementById("slider").value = a;
+				document.getElementById("num").value = a;
+			}
+			
+		}
+
+		// functin for default font size 16.
+		function changeSizeByBtn(){
+			container.style.fontSize = '16px';
+			document.getElementById("slider").value = 16;
+			document.getElementById("num").value = 16;
+			a = 16;
+		}
+
+		// function for chnage font size by range value.
+		function changeSizeBySlider() {
+			a = document.getElementById("slider").value;
+			cont.style.fontSize = a+'px';
+			document.getElementById("num").value = a;
+		}
+
+		// function for change font size by input type no.
+		function changeSizeBynum() {
+			a = document.getElementById("num").value;
+			cont.style.fontSize = a+'px';
+			document.getElementById("slider").value = a;
+		}
+	</script>
+</body>
+</html>
