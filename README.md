@@ -1,0 +1,7 @@
+FontSizer — Interactive Font Size Controller is a clean, browser-based text accessibility tool built entirely with vanilla HTML, CSS, and JavaScript — no frameworks, no libraries, zero dependencies.
+The app demonstrates three different ways to dynamically control font size on a live text block — all working in real time without any page refresh. Users can decrease or increase the font size using the A− and A+ buttons for quick step-by-step adjustments, drag a range slider for smooth continuous resizing, or type an exact value directly into a number input field for precise control. All three controls stay in sync with each other — changing one instantly reflects across all others.
+Under the hood, every control is wired to the same JavaScript handler using DOM event listeners — onclick for the buttons, oninput for the range slider, and onchange for the number input. Each event reads or updates a shared font size value and applies it directly to the target element via element.style.fontSize, keeping the UI state consistent at all times.
+This project is a practical demonstration of multi-input synchronization, real-time DOM style manipulation, event-driven UI design, and building genuinely useful accessibility features using nothing but core web technologies. It reflects real-world patterns used in content-heavy websites, e-readers, and accessibility toolbars.
+
+Tech Stack: HTML5 · CSS3 · Vanilla JavaScript
+Key Concepts: DOM Style Manipulation · Event Listeners · Multi-Input Sync · Accessibility UI · Real-time Updates
